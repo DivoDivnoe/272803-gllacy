@@ -1,0 +1,35 @@
+/*.sсroll {
+    width: 400px;
+    background: black;
+    height: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.sсroll-left,
+.sсroll-right {
+    position: absolute;
+    display: block;
+    width: 20px;
+    background: red;
+    height: 20px;
+    border-radius: 50%;
+    top: -8px;
+    z-index: 1;
+}
+
+.sсroll-left {
+    left: 50px;
+}
+
+.sсroll-right {
+    right: 50px;
+}
+
+.sсroll-field {
+    width: 293px;
+    height: 5px;
+    background: green;
+    position: absolute;
+    left: 54px;
+}*/
