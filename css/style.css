@@ -1,4 +1,19 @@
+html,
+html::after,
+html::before {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -21,6 +36,138 @@ h1, h3 {
 h2 {
     font-size: 60px;
     line-height: 60px;
+}
+
+.container {
+    width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.promos,
+.shop-hits,
+.main-about-us,
+.blog-subscribe,
+.catalog-item,
+.filter-form {
+    margin-bottom: 40px;
+}
+
+.main-menu,
+.header-logo {
+    float: left;
+}
+
+.user-block {
+    float: right;
+    width: 267px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner-item {
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promos-item {
+    width: 560px;
+    min-height: 230px;
+}
+
+.promos-item1 {
+    float: left;
+}
+
+.promos-item2 {
+    float: right;
+}
+
+.shop-hits-item {
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+}
+
+.shop-hits-item:last-child {
+    margin-right: 0;
+}
+
+.blog,
+.subscribe {
+    width: 560px;
+    min-height: 220px;
+}
+
+.blog {
+    float: left;
+}
+
+.subscribe {
+    float: right;
+}
+
+footer {
+    font-size: 13px;
+}
+
+.footer-social,
+.footer-about-us {
+    float: left;
+    margin-right: 26px;
+}
+
+.footer-social,
+.footer-copyright {
+    width: 267px;
+}
+
+.footer-about-us {
+    width: 560px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.footer-about-left {
+    float: left;
+    width: 140px;
+}
+
+.footer-about-right {
+    float: right;
+    width: 170px;
+}
+
+.footer-copyright {
+    float: right;
+}
+
+.filter-form {
+    width: 866px;
+}
+
+.filter-form div {
+    float: left;
+}
+
+.catalog-item {
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+    margin-bottom: 40px;
+}
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 /*.sсroll {
