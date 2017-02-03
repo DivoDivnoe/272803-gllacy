@@ -44,12 +44,6 @@ h2 {
     margin-right: auto;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .promos,
 .shop-hits,
 .main-about-us,
@@ -59,14 +53,62 @@ h2 {
     margin-bottom: 40px;
 }
 
-.main-menu,
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.main-menu {
+    display: flex;
+}
+
 .header-logo {
-    float: left;
+    margin-top: 10px;
+}
+
+.main-menu > ul {
+    display: flex;
+    margin: 20px 0 0 10px;
+    padding: 0;
+}
+
+.main-menu > ul > li > a {
+    display: block;
+    padding: 7px 15px;
+}
+
+.sub-main-menu {
+    display: none;
 }
 
 .user-block {
-    float: right;
     width: 267px;
+    text-align: right;
+}
+
+.search-field {
+    display: none;
+    width: 340px;
+    padding: 20px 15px;
+}
+
+.login-form {
+    display: none;
+    width: 280px;
+    padding: 20px;
+}
+
+.login-form-help {
+    display: inline-block;
+    width: 125px;
+    font-size: 13px;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.header-contacts a {
+    display: block;
 }
 
 .banner {
@@ -77,6 +119,15 @@ h2 {
     width: 670px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.banner-list {
+    display: flex;
+}
+
+.promos {
+    display: flex;
+    justify-content: space-between;
 }
 
 .promos-item {
@@ -92,6 +143,11 @@ h2 {
     float: right;
 }
 
+.shop-hits {
+    display: flex;
+    justify-content: space-between;
+}
+
 .shop-hits-item {
     float: left;
     width: 267px;
@@ -102,65 +158,144 @@ h2 {
     margin-right: 0;
 }
 
+.main-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-about-us > p {
+    width: 100%;
+}
+
+.main-about-item {
+    width: 560px;
+}
+
+.blog-subscribe {
+    display: flex;
+    justify-content: space-between;
+}
+
 .blog,
 .subscribe {
     width: 560px;
-    min-height: 220px;
 }
 
-.blog {
-    float: left;
+.map-contacts {
+    display: none;
+    width: 300px;
+    padding: 30px 25px;
 }
 
-.subscribe {
-    float: right;
+.map-contacts-address b,
+.map-contacts-phone a {
+    display: block;
+}
+
+.feedback-form {
+    display: none;
+    width: 475px;
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    padding-top: 15px;
     font-size: 13px;
 }
 
-.footer-social,
-.footer-about-us {
-    float: left;
-    margin-right: 26px;
+.footer-social {
+    width: 267px;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-social,
 .footer-copyright {
     width: 267px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    text-align: right;
 }
 
 .footer-about-us {
+    display: flex;
+    justify-content: space-between;
     width: 560px;
     padding-left: 125px;
     padding-right: 125px;
 }
 
 .footer-about-left {
-    float: left;
     width: 140px;
 }
 
 .footer-about-right {
-    float: right;
     width: 170px;
 }
 
-.footer-copyright {
-    float: right;
+.busket-form {
+    display: none;
+    width: 540px;
+    padding: 20px 15px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.busket-item {
+    display: flex;
+    align-items: baseline;
+    padding-left: 25px;
+}
+
+.busket-item-name {
+    width: 230px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.busket-item-weight {
+    width: 100px;
+}
+
+.busket-item-total {
+    width: 70px;
+    margin-left: auto;
+}
+
+.busket-purchase {
+    text-align: right;
+}
+
+.busket-total {
+    display: block;
+}
+
+.breadcrumbs {
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .filter-form {
-    width: 866px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
 }
 
 .filter-form div {
     float: left;
 }
 
+.catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+}
 .catalog-item {
-    float: left;
     width: 267px;
     margin-right: 26px;
     margin-bottom: 40px;
@@ -168,6 +303,16 @@ footer {
 
 .catalog-item:nth-child(4n) {
     margin-right: 0;
+}
+
+.catalog-nav {
+    display: flex;
+}
+
+.catalog-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 /*.sсroll {

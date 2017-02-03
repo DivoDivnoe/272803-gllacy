@@ -8,11 +8,11 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="main-header container clearfix">
-           <div class="header-logo">
-                <img src="img/logo.png" alt="Gllacy Shop" width="154" height="64">
-            </div>
+        <header class="main-header container">
             <nav class="main-menu">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="Gllacy Shop" width="154" height="64">
+                </div>
                 <ul>
                     <li>
                         <a href="#">Каталог</a>
@@ -33,23 +33,25 @@
                 </ul>
             </nav>
             <div class="user-block">
-                <a class="search" href="#">Поиск</a>
-                <div class="search-field">
-                    <input type="text" placeholder="Что ищем?">
+                <div class="user-block-nav">
+                    <a class="search" href="#">Поиск</a>
+                    <div class="search-field">
+                        <input type="text" placeholder="Что ищем?">
+                    </div>
+                    <a class="login"  href="#">Вход</a>
+                    <div class="login-form">
+                        <form action="#" type="post">
+                            <input type="email" name="email" placeholder="Электронная почта" required>
+                            <input type="password" name="password" placeholder="Пароль" required>
+                            <button class="btn">Войти</button>
+                            <div class="login-form-help">
+                                <a href="#">Забыли пароль?</a>
+                                <a href="#">Новая регистрация</a>
+                            </div>
+                        </form>
+                    </div>
+                    <a class="busket" href="#">Пусто</a>
                 </div>
-                <a class="login"  href="#">Вход</a>
-                <div class="login-form">
-                    <form action="#" type="post">
-                        <input type="email" name="email" placeholder="Электронная почта" required>
-                        <input type="password" name="password" placeholder="Пароль" required>
-                        <button class="btn">Войти</button>
-                        <div class="login-form-help">
-                            <a href="#">Забыли пароль?</a>
-                            <a href="#">Новая регистрация</a>
-                        </div>
-                    </form>
-                </div>
-                <a class="busket" href="#">Пусто</a>
                 <div class="header-contacts">
                     С 10 до 20, ежедневно
                     <a href="tel:+78124502525">8 812 450-25-25</a>
@@ -70,7 +72,7 @@
                         <li></li>
                     </ul>
                 </div>
-                <section class="promos clearfix">
+                <section class="promos">
                     <div class="promos-item promos-item1">
                         <h3>Малинка даром!</h3>
                         <p>
@@ -88,7 +90,7 @@
                         <a class="btn" href="#">Хочу варенье!</a>
                     </div>
                 </section>
-                <section class="shop-hits clearfix">
+                <section class="shop-hits">
                     <article class="shop-hits-item">
                         <img class="hit" src="img/hit.png" alt="HIT" width="61" height="61">
                         <img src="img/item1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -116,7 +118,7 @@
                 </section>
                 <section class="main-about-us">
                     <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-                    <div class="main-about-left">
+                    <div class="main-about-item">
                         <p>
                             Все наше мороженое изготавливается на собственном производстве,
                             с использованием современного оборудования и проверенных временем технологий.
@@ -126,7 +128,7 @@
                             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                         </p>
                     </div>
-                    <div class="main-about-right">
+                    <div class="main-about-item">
                         <p>
                             Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
                             с которыми нас связывает долговременное сотрудничество.
@@ -137,10 +139,10 @@
                         </p>
                     </div>
                 </section>
-                <div class="blog-subscribe clearfix">
+                <div class="blog-subscribe">
                     <section class="blog">
                         <h3 class="blog-title">Новое в нашем блоге</h3>
-                        <a href="#">10 способов сервировки фпуктовых щербетов к столу</a>
+                        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
                     </section>
                     <section class="subscribe">
                         <p>
@@ -161,11 +163,12 @@
                     <div class="map-contacts-address">
                         Адрес главного офиса<br>
                         и офлайн магазина:
-                        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+                        <b>ул. Большая Конюшенная<br>
+                            19/8, Санкт-Петербург</b>
                     </div>
-                    <div class="map-contacts-address">
+                    <div class="map-contacts-phone">
                         Для заказов по телефону:
-                        <b><a href="tel:+78124502525">8 812 450-25-25</a></b>
+                        <a href="tel:+78124502525">8 812 450-25-25</a>
                         (с 10 до 20 ежедневно)
                     </div>
                     <a class="btn" href="#">Форма обратной связи</a>
@@ -184,13 +187,13 @@
                 </section>
             </div>
         </main>
-        <footer class="main-footer container clearfix">
-            <section class="footer-social">
-                <a class="social-btn social-twitter"   href="#">Твиттер</a>
-                <a class="social-btn social-instagram" href="#">Инстаграм</a>
-                <a class="social-btn social-facebook"  href="#">Фейсбук</a>
-                <a class="social-btn social-vkontakte" href="#">Вконтакте</a>
-            </section>
+        <footer class="main-footer container">
+            <ul class="footer-social">
+                <li><a class="social-btn social-twitter"   href="#">Твиттер</a></li>
+                <li><a class="social-btn social-instagram" href="#">Инстаграм</a></li>
+                <li><a class="social-btn social-facebook"  href="#">Фейсбук</a></li>
+                <li><a class="social-btn social-vkontakte" href="#">Вконтакте</a></li>
+            </ul>
             <section class="footer-about-us">
                 <div class="footer-about-left">
                     <a href="#">Для поставщиков</a><br>
