@@ -55,7 +55,6 @@ h2 {
 
 .main-header {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 
@@ -84,6 +83,7 @@ h2 {
 
 .user-block {
     width: 267px;
+    margin-left: auto;
     text-align: right;
 }
 
@@ -281,14 +281,11 @@ footer {
     margin: 0;
 }
 
-.filter-form {
+.filter-form form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 860px;
-}
-
-.filter-form div {
-    float: left;
 }
 
 .catalog-items {
@@ -306,10 +303,6 @@ footer {
 }
 
 .catalog-nav {
-    display: flex;
-}
-
-.catalog-nav ul {
     display: flex;
     margin: 0;
     padding: 0;
