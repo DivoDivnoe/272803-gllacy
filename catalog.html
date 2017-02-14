@@ -46,7 +46,7 @@
                     <li class="user-block-item user-block-login">
                         <a class="login"  href="#">Вход</a>
                         <div class="login-form">
-                            <form action="#" type="post">
+                            <form action="#" method="post">
                                 <div class="input-cover">
                                     <input type="email" name="email" placeholder="Электронная почта" required>
                                     <span class="placeholder-indicator">Электронная почта</span>
@@ -117,14 +117,15 @@
                 <form action="#" method="get">
                     <div class="filter-sort">
                         <h2>Сортировка:</h2>
-                        <label>
-                            <select name="sort">
+                        <div class="select-cover">
+                            <select id="filter-sort-select" name="sort">
                                 <option value="popularity">по популярности</option>
                                 <option value="first-cheap">сначала недорогие</option>
                                 <option value="first-expensive">сначала дорогие</option>
                                 <option value="fat">по жирности</option>
                             </select>
-                        </label>
+                            <label for="filter-sort-select" class="arrow"></label>
+                        </div>
                     </div>
                     <div class="filter-price">
                         <h2>Цена: 100 руб. &mdash; 500 руб.</h2>
