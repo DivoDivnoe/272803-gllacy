@@ -18,7 +18,7 @@ body{
     line-height: 22px;
     font-family: 'Roboto', 'Arial', sans-serif;
     color: #ffffff;
-    background-color: #97aca0;
+    background-color: #97aca0
 }
 
 body a,
@@ -64,6 +64,10 @@ body textarea {
     border: 1px solid #d3d3d2;
 }
 
+.index-wrapper {
+
+}
+
 h1, h2, h3 {
     font-weight: bold;
     font-family: inherit;
@@ -91,6 +95,10 @@ h2 {
 .main-about-us,
 .blog-subscribe {
     margin-bottom: 40px;
+}
+
+body > input[type="radio"] {
+    display: none;
 }
 
 .main-header {
@@ -444,6 +452,7 @@ h2 {
     z-index: 0;
     top: 0;
     left: 0;
+    display: none;
     width: 100%;
     text-align: center;
 }
@@ -489,7 +498,7 @@ h2 {
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
-.banner-nav {
+.banner-nav-indicator {
     position: relative;
     top: -43px;
     display: flex;
@@ -499,21 +508,49 @@ h2 {
     list-style: none;
 }
 
-.banner-nav li {
+.banner-nav-indicator label {
+    display: block;
     width: 21px;
     height: 21px;
     margin-right: 8px;
     border: 2px solid #ffffff;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.banner-nav li:hover {
+.banner-nav-indicator label:hover {
     background: rgba(255, 255, 255, 0.4);
 }
 
-.banner-list-active,
-.banner-nav .banner-list-active:hover {
+.banner-nav-indicator label:active {
     background-color: #ffffff;
+}
+
+#btn-1:checked ~ .index-wrapper label[for="btn-1"],
+#btn-2:checked ~ .index-wrapper label[for="btn-2"],
+#btn-3:checked ~ .index-wrapper label[for="btn-3"],
+#btn-1:checked ~ .index-wrapper label[for="btn-1"]:hover,
+#btn-2:checked ~ .index-wrapper label[for="btn-2"]:hover,
+#btn-3:checked ~ .index-wrapper label[for="btn-3"]:hover {
+    background-color: #ffffff;
+}
+
+#btn-1:checked ~ .index-wrapper .slide1,
+#btn-2:checked ~ .index-wrapper .slide2,
+#btn-3:checked ~ .index-wrapper .slide3 {
+    display: block;
+}
+
+#btn-1:checked ~.index-wrapper {
+    background-color: #97aca0;
+}
+
+#btn-2:checked ~.index-wrapper {
+    background-color: #919faf;
+}
+
+#btn-3:checked ~.index-wrapper {
+    background-color: #a7958e;
 }
 
 .promo {
@@ -926,6 +963,10 @@ h2 {
     line-height: 24px;
     border: none;
     color: #ffffff;
+}
+
+.feedback-form .btn:focus {
+    outline: none;
 }
 
 footer.container {
