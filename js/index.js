@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function showFeedbackForm() {
     document.querySelector('.map-contacts-btn').addEventListener('click', function(event) {
-        event.preventDefault();
+            event.preventDefault();
+        document.querySelector('.feedback-form').style.display = '-ms-flexbox';
         document.querySelector('.feedback-form').style.display = 'flex';
     });
     closeFeedbackForm();
@@ -37,3 +38,4 @@ function hidePlaceholder(input) {
         this.setAttribute('placeholder', str);
     });
 }
+
