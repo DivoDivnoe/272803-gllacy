@@ -1046,6 +1046,7 @@ body > input[type="radio"] {
 .feedback-form .btn {
     -ms-flex-item-align: end;
     align-self: flex-end;
+    margin-left: auto;
     padding-top: 9px;
     padding-bottom: 12px;
     font-size: 18px;
