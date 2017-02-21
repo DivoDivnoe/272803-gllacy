@@ -174,6 +174,7 @@ body > input[type="radio"] {
     background: #f8f7f4;
     list-style: none;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .sub-main-menu a {
@@ -951,9 +952,9 @@ body > input[type="radio"] {
 
 .feedback-form {
     position: fixed;
+    display: none;
     top: 0;
     left: 0;
-    display: none;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -964,13 +965,62 @@ body > input[type="radio"] {
     z-index: 100;
 }
 
-.feedback-form form {
+.feedback-form-show {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.feedback-form form{
     position: relative;
     width: 477px;
     margin: auto;
     padding: 16px 25px 26px 24px;
     border-radius: 10px;
     background: #f8f7f4;
+}
+
+@-webkit-keyframes appearance {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes appearance {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.feedback-form-show form {
+    -webkit-animation: appearance 0.6s;
+    animation: appearance 0.6s;
 }
 
 .feedback-form-close {

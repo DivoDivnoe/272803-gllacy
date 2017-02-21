@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function showFeedbackForm() {
     document.querySelector('.map-contacts-btn').addEventListener('click', function(event) {
             event.preventDefault();
-        document.querySelector('.feedback-form').style.display = '-ms-flexbox';
-        document.querySelector('.feedback-form').style.display = 'flex';
+        document.querySelector('.feedback-form').classList.add('feedback-form-show');
     });
     closeFeedbackForm();
 }
@@ -15,7 +14,7 @@ function showFeedbackForm() {
 function closeFeedbackForm() {
     document.querySelector('.feedback-form-close').addEventListener('click', function(event) {
         event.preventDefault();
-        document.querySelector('.feedback-form').style.display = 'none';
+        document.querySelector('.feedback-form').classList.remove('feedback-form-show');
     });
 }
 
@@ -38,4 +37,3 @@ function hidePlaceholder(input) {
         this.setAttribute('placeholder', str);
     });
 }
-
